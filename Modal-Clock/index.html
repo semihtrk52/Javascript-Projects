@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/28bda0f222.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/Modal-Clock/bundle.js"></script>
+
+    <!--Font Style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timezone">
+        <p id="zone">Europe / London</p>
+        <i id="openModal" class="fa-regular fa-pen-to-square"></i>
+      </div>
+      <div class="current-time">
+        <h1 id="clock"></h1>
+      </div>
+      <div class="current-date"></div>
+    </div>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="closeModal" class="close-btn">&times;</button>
+        <h2>Change Timezone</h2>
+        <select id="timezone-select">
+          <option value="" disabled selected>Select a timezone</option>
+          <option value="Europe/Istanbul">Europe/Istanbul</option>
+          <option value="Europe/Paris">Europe/Paris</option>
+          <option value="America/New_York">America/New_York</option>
+          <option value="Asia/Tokyo">Asia/Tokyo</option>
+          <option value="America/Los_Angeles">America/Los_Angeles</option>
+          <option value="Australia/Sydney">Australia/Sydney</option>
+          <option value="Europe/Moscow">Europe/Moscow</option>
+          <option value="America/Sao_Paulo">America/Sao_Paulo</option>
+          <option value="Asia/Dubai">Asia/Dubai</option>
+          <option value="Asia/Hong_Kong">Asia/Hong_Kong</option>
+        </select>
+        <button id="apply" class="apply-button">Apply</button>
+      </div>
+    </div>
+  </body>
+</html>

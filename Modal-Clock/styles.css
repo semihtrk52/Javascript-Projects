@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nerko One", Arial, sans-serif;
+}
+
+body {
+  background: lightblue;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+  border: 10px solid black;
+  border-radius: 20px;
+}
+
+.timezone {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+  padding-right: 40px;
+  font-size: 24px;
+}
+
+.timezone p {
+  margin-right: 15px;
+}
+
+.current-time {
+  font-size: 70px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-time h1 {
+  margin-right: 50px;
+}
+
+.current-date {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+  padding-right: 40px;
+  font-size: 24px;
+}
+
+.header button {
+  width: 50px;
+  height: 50px;
+}
+
+.modal {
+  display: none; /* Modal varsayılan olarak gizli */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Koyu arka plan */
+  overflow: auto;
+  z-index: 1000; /* Üstte görünmesi için */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  height: 50%;
+  max-height: 140px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 34px;
+}
+
+.modal-content select {
+  width: 250px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.apply-button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #000; /* Hover durumunda rengi değiştir */
+}
