@@ -9,6 +9,11 @@ const eraseButton = document.getElementById('erase-btn')
 const paintButton = document.getElementById('paint-btn')
 const container = document.querySelector('.container')
 
+setInterval(() => {
+  widthValue.textContent = widthRange.value
+  heightValue.textContent = heightRange.value
+}, 100)
+
 let isPainting = false
 let isErase = false
 let count = 1
@@ -16,6 +21,8 @@ let count = 1
 container.addEventListener('mousedown', () => {
   if (!isErase && count) {
     isPainting = true
+  } else if (!count) {
+    isErase = true
   }
 })
 
