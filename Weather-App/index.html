@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="input">
+        <input type="text" id="cityInput" placeholder="Enter City Name" />
+      </div>
+
+      <div class="weather hidden">
+        <div class="top">
+          <div class="top-left">
+            <h2 id="cityName">Belgrade, RS</h2>
+            <p id="description">broken clouds</p>
+          </div>
+          <div class="top-right">
+            <img id="image" src="images/02d.png" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="bottom-left">
+            <h1 id="degree">22&deg;C</h1>
+          </div>
+          <div class="bottom-right">
+            <div class="details">
+              <p>Details</p>
+            </div>
+            <div class="details">
+              <span>Feels like</span>
+              <span id="details-degree">22&deg;C</span>
+            </div>
+            <div class="details">
+              <span>Winds</span>
+              <span id="winds">2.06 m/s</span>
+            </div>
+            <div class="details">
+              <span>Humidity</span>
+              <span id="humidity">78%</span>
+            </div>
+            <div class="details">
+              <span>Pressure</span>
+              <span id="pressure">1015 hPa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="day hidden">
+        <h2>Daily</h2>
+        <div class="days"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
