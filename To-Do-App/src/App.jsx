@@ -6,15 +6,7 @@ import TodoList from './components/TodoList';
 function App() {
   return (
     <div className="App">
-      <div
-        style={{
-          width: '300px',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+      <div className="app-border">
         <TodoCreate />
         <TodoList />
       </div>
