@@ -1,0 +1,64 @@
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.todo-create input {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+}
+
+.todo-create button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: gold;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todo-list {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.todo-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.task-box {
+  width: 200px;
+}
+
+.todo-icondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-icons {
+  font-size: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+}
