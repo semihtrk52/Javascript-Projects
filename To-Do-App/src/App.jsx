@@ -10,13 +10,24 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
-  console.log(todos);
+  const deleteTodo = (todoId) => {
+    setTodos([...todos.filter((todo) => todo.id !== todoId)]);
+  };
+
+  const updateTodo = (newTodo) => {
+    setTodos(todos.map((todo) => (
+      todo.id === newTodo.id ? newTodo : todo)));
+  };
 
   return (
     <div className="App">
       <div className="app-border">
         <TodoCreate onCreateTodo={createTodo} />
-        <TodoList />
+        <TodoList
+          todos={todos}
+          onRemoveTodo={deleteTodo}
+          onUpdateTodo={updateTodo}
+        />
       </div>
     </div>
   );

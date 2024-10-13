@@ -2,14 +2,21 @@ import React from 'react';
 import Todo from '../components/Todo';
 import '../App.css';
 
-function TodoList() {
+function TodoList({ todos, onRemoveTodo, onUpdateTodo }) {
   return (
-    <div className="todo-list">
-      <Todo />
-      <Todo />
-      <Todo />
-      <Todo />
-    </div>
+    <>
+      {todos
+        .slice(0)
+        .reverse()
+        .map((todo) => (
+          <Todo
+            key={todo.id}
+            todo={todo}
+            onRemoveTodo={onRemoveTodo}
+            onUpdateTodo={onUpdateTodo}
+          />
+        ))}
+    </>
   );
 }
 
