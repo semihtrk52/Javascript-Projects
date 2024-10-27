@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Type Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Time: <span>33s</span></p>
+        <p>Mistakes: <span>2</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"
+      ></div>
+      <div class="text-container">
+        <p>
+          Great minds discuss ideas; average minds discuss events; small minds
+          discuss people.
+        </p>
+      </div>
+      <div class="input-container">
+        <textarea id="textarea" rows="5" cols="36"> </textarea>
+        <button id="start-test" onclick="startTest()">Start Test</button>
+        <button id="stop-test" onclick="displayResult()">Stop Test</button>
+      </div>
+      <div class="result-container">
+        <h3>Result</h3>
+        <div class="result-rate">
+          <p>Accuracy: <span>98%</span></p>
+          <p>Speed: <span>62.22wpm</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
