@@ -25,6 +25,10 @@ function Currency() {
       }
     };
 
+    const Data = {
+
+    }
+
     fetchData();
   }, [fromCurrency]);
 
